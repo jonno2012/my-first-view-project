@@ -1,4 +1,8 @@
-- npm init vue@latest
+- npm init vue@latest and follow instructions
+- npx vite - runs a dev server
 
 * .vue files are kept inside the views dir. THey are known as 'single file components'. You do not need use export default{
 and include everything inside <script> tags.
+* set aliases in the vite.config file to avoid having to type out long paths for imports, all of the time.
+* phpstoem used to need a jsonconfig.json entry to recognise the aliases but doesn't seem to now??
+* By convention a component which is a one time use component, it has The in the name.
