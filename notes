@@ -6,3 +6,11 @@ and include everything inside <script> tags.
 * set aliases in the vite.config file to avoid having to type out long paths for imports, all of the time.
 * phpstoem used to need a jsonconfig.json entry to recognise the aliases but doesn't seem to now??
 * By convention a component which is a one time use component, it has The in the name.
+
+* in vue 3 we now have the composition API for building our vue applications as well as the options API which has
+always existed and which we have been using.
+    - the composition defines components' logic by importing API functions. It is typically done with <script setup>
+    - we can remove all data() methods: {} etc by using <script setup> and simply including out methods and vars within it.
+    We now use ref() to define reactivity on a var. It will not be reactive by default. There is the experimental
+    reactivityTransform flag we can set in vite.config to allow to use the $ref method instead globally, meaning that
+    we don't even have to import ref in our components. We now have to use .value on our data props in order to change them
