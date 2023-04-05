@@ -1,1 +1,4 @@
 - npm init vue@latest
+
+* .vue files are kept inside the views dir. THey are known as 'single file components'. You do not need use export default{
+and include everything inside <script> tags.
