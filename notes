@@ -14,3 +14,6 @@ always existed and which we have been using.
     We now use ref() to define reactivity on a var. It will not be reactive by default. There is the experimental
     reactivityTransform flag we can set in vite.config to allow to use the $ref method instead globally, meaning that
     we don't even have to import ref in our components. We now have to use .value on our data props in order to change them
+
+* mixins can be used to include common code but they are a bit frowned upon now.
+* composables are better than mixins
