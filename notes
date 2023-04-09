@@ -25,3 +25,7 @@ Pinia
 Pinia is the official replacement for Vuex. It gives you global state.
 - You can think of the state, actions and getters methods defined in the defineStore method as kind of like an initial value, mutator
 method and computed property in Vue2.
+
+* As a general rule modals should be placed just within the closing body tag. In general, not just in vue.
+
+* To teleport to an element you have added to the DOM you will need to wait for it to have been loaded/mounted first
