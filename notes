@@ -17,3 +17,5 @@ always existed and which we have been using.
 
 * mixins can be used to include common code but they are a bit frowned upon now.
 * composables are better than mixins
+
+* actions can make things easier to work with because, for example, it may be easier to debug as you can put console.logs into it etc
