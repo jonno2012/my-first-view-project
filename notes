@@ -19,3 +19,7 @@ always existed and which we have been using.
 * composables are better than mixins
 
 * actions can make things easier to work with because, for example, it may be easier to debug as you can put console.logs into it etc
+
+Pinia
+------
+Pinia is the official replacement for Vuex. It gives you global state.
