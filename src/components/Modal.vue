@@ -4,7 +4,14 @@ defineProps({
 });
 </script>
 <template>
-  <Transition name="modal">
+  <Transition
+      enter-from-class="transition opacity-0 scale-125"
+      enter-to-class="transition opacity-100 scale-100"
+      enter-active-class="transition duration-300"
+      leave-active-class="transition duration-200"
+      leave-from-class="opacity-100 scale-100"
+      leave-to-class="opacity-0 scale-125"
+  >
     <div v-if="show" class="modal-mask">
       <div class="modal-container">
         <div>
@@ -53,19 +60,4 @@ defineProps({
 .modal-footer button:hover {
   background: #c8c8c8;
 }
-/* The 'modal' prefix for these classes is applied to any <Transition> tags which have the name="modal".
-  The class name can be anything you want */
-
-.modal-enter-active, .modal-leave-active {
-  transition: opacity 1s;
-}
-
-.modal-enter-from, .modal-leave-to {
-  opacity: 0;
-}
-
-.modal-enter-to, .modal-leave-from {
-  opacity: 100;
-}
-
 </style>
