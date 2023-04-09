@@ -23,3 +23,5 @@ always existed and which we have been using.
 Pinia
 ------
 Pinia is the official replacement for Vuex. It gives you global state.
+- You can think of the state, actions and getters methods defined in the defineStore method as kind of like an initial value, mutator
+method and computed property in Vue2.
